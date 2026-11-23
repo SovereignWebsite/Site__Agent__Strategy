@@ -1,0 +1,19 @@
+{
+ "agent": "strategy.b@SovereignWebsite.dinis",
+ "role": "Strategy agent on account B: go-to-market, market research and the customer pipeline for the Sovereign Website; pages under /accounts/b/",
+ "created": "2026-11-23",
+ "status": "active",
+ "session": "https://claude.ai/code/session_01Kw9UwDF1rJD6h9xEsVg5bx",
+ "fingerprint": "sha256:8939ecd58a437056",
+ "signing_fingerprint": "sha256:7da14030e6234c36",
+ "ssh_signing": "ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBFKcUcZawI0GD2xIVwhOio1toFQUOeb17Gzg8kgBrY0MpBPOkElenX9HVJD6U06lXe88GziGmzWOnItw+spk1VY=",
+ "bundle": {
+  "v": 1,
+  "encrypt": "-----BEGIN PUBLIC KEY-----\nMIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAmPoU6ldmNjItZ+ilC5Lb\nZu1ENQCvsZuF9M/HWqbo2nA7X2YPh0H584BS0yKrUpZXn4IjLe6OAu4QlsHwJ5ZE\nmX8GlVS5YUv27F36H88BaA/gwn7bM7qB98Qo4fbT6hUzZIBT9llCZC/tB7SCe8mW\n/gGST5yD67H5IZIE06qxBzVZMquMCUh4rGZbwzYhYrDcWfyC0zQ1LwClkmrE3tt5\n1kk890ePM4lltrA+aqySPtju3gQgEjs9dNlmAh5FbTN2v/ybXHd5HQmZ03MkWjFO\nBJSHb7hvCmowz0iXPQ9O4toJSU1Vh9QulIrOHjxrUfbNRPSl21yJT/gMfaatiaRx\npzlUtQ5UMxwpzi03kqxtuSXuYPUQ4w8NsyF8pm4LjLNAGUhhKSohA0qoJe0ddR22\nNeXjFw7czNYEvsdJ8JlAhZadRdBiwAqksv7JVRF/W5xixTdUJUVo0m4u69t4rLRo\nGPSE+bzRS+TyYforEs0hBd0TRiieH2GAyC6TfilLEsLzwikq6BPrQve7fCzLMbKJ\n74Ovn//2YKmeh6GOVhURlFfPPpezWONZO+MDPLLckSbfjkjCG7UWM4jGyL2TOaTg\nLnCxrFosFzAeBUy3pKbv0An7DVBB+DcVSYOjyvPikkVZQ5jIFV+hMwALCJYLNOzL\nS55HQfzwnD+2lsd7Ain45Y8CAwEAAQ==\n-----END PUBLIC KEY-----\n",
+  "sign": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEUpxRxlrAjQYPbEhXCE6KjW2gVBQ5\n5vXsbODySAGtjQykE86QSV6df0dUkPpTTqVd7zwbOIabNY6ci3D6ymTVVg==\n-----END PUBLIC KEY-----\n",
+  "label": "strategy.b@SovereignWebsite.dinis",
+  "fingerprint": "sha256:8939ecd58a437056",
+  "signing_fingerprint": "sha256:7da14030e6234c36"
+ },
+ "how": "Made by the agent in its own session on 23 November 2026 with sgit pki keygen; public half only. Published in the agent's own repository at Dinis Cruz's word, 23 Nov 2026 23:14:43 UTC: \"They should be pushing their keys to their own repos, and the IAC is the only one that can connect to it.\" Record: https://decisions.agents.sovereignweb.site/records/2026-11-23__asks-2-8-31-revised.json"
+}
