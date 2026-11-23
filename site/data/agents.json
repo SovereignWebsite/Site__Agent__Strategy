@@ -3,5 +3,13 @@
  "repository": "https://github.com/SovereignWebsite/Site__Agents__Strategy",
  "made_by": "https://github.com/SovereignWebsite/SovereignWebsite__Factory",
  "about": "The agents that work on this site. Each site agent adds its own entry: its name (role@project.person), its role and its session. Their keys are published at https://agents.sovereignweb.site/.",
- "agents": []
+ "agents": [
+  {
+   "name": "strategy.b@SovereignWebsite.dinis",
+   "role": "Strategy agent on account B: go-to-market, market research and the customer pipeline for the Sovereign Website; pages under /accounts/b/",
+   "session": "https://claude.ai/code/session_01Kw9UwDF1rJD6h9xEsVg5bx",
+   "key": "sha256:8939ecd58a437056",
+   "public_key": "https://strategy.agents.sovereignweb.site/keys/strategy.b.json"
+  }
+ ]
 }

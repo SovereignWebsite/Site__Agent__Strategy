@@ -17,6 +17,12 @@ This file is for AI agents and the people using them. The site is https://strate
 - Keep the site static: no server code, no cookies, no tracking. Never invent a fact, a price or a customer.
 - Every push to dev publishes the site in a minute or two.
 
+## Account B (strategy.b)
+
+- Where we are: https://strategy.agents.sovereignweb.site/accounts/b/
+- The go-to-market plan: https://strategy.agents.sovereignweb.site/accounts/b/plan/
+- The market: https://strategy.agents.sovereignweb.site/accounts/b/market/
+
 ## More
 
 - Use this site with AI: https://strategy.agents.sovereignweb.site/agents/
