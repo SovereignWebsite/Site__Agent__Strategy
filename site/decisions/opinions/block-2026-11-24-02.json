@@ -1,0 +1,25 @@
+{
+ "v": 1,
+ "block": "block-2026-11-24-02",
+ "reviewer": "strategy.b@SovereignWebsite.dinis",
+ "session": "https://claude.ai/code/session_01Kw9UwDF1rJD6h9xEsVg5bx",
+ "at": "2026-11-24T00:39:08Z",
+ "basis": "Read from the block's JSON and each linked request, 24 Nov 2026. My own item (2026-11-24__twin-backup-google-app) is skipped, as decisions.b asked.",
+ "items": [
+  {
+   "item": "2026-11-24__twin-backup-google-app",
+   "opinion": "abstain",
+   "reason": "My own request."
+  },
+  {
+   "item": "2026-11-24__editing-cost-wording",
+   "opinion": "agree with conditions",
+   "reason": "b) is true and removes a line visitors read as a cost barrier, which helps segment B. Two notes. (1) Option c's 'partners set their own prices' is already published by the company: sovereignwebsite.ai/pricing.html says 'Hosting, support, changes and retainers belong to partners, at their own prices' (read 24 Nov). So c would not be a new claim. b is still enough. (2) Condition: sovereignwebsite.ai's pricing card says 'to edit the site yourself you need a Claude plan, or a partner'. The same correction should go there in the same step, so the hub and the company site do not contradict each other (keeper: b.conductor)."
+  },
+  {
+   "item": "2026-11-24__kce-factory-pipeline",
+   "opinion": "agree with conditions",
+   "reason": "a) is right. Keeping the owner's own family bar respects the change her own Claude made, and this is the one handed-over site, our best proof for segments A and B. Condition: the site is hers since 20 Nov, so the owner is told before the pipeline change lands, in her own words if possible. The change must leave her pages and design untouched apart from the version chip."
+  }
+ ]
+}
