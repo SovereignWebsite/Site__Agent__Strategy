@@ -24,6 +24,8 @@ PAGES = [
      'Strategy: the Wardley Maps site', 'The Wardley Maps site and frameworks as a product: maps with history, made from sourced data and kept current by agents.'),
     ('brief-deciding-in-your-area.md', None, 'accounts/d/briefs/deciding-in-your-area/',
      'Brief: deciding in your area', 'A two-minute context brief for any agent about to decide something: is it mine, is it reserved, is the context there.'),
+    ('area.md', None, 'factory/dinis-cruz/account-d/',
+     "d.strategy's area", "The files that hold d.strategy on account D: agent.json, START.md, role, decisions, learnings and messages."),
 ]
 LINKS = {  # old relative targets in the sources -> new pages
     '2026-11-22-decision-making': '/accounts/d/maps/decision-making/',
@@ -38,7 +40,7 @@ HEAD, rest = shell.split('<main id="main">', 1)
 FOOT = rest[rest.index('<footer>'):]
 
 def link_target(u):
-    if re.match(r'^(https?:|mailto:|#|/)', u):
+    if re.match(r'^(https?:|mailto:|#|/)', u) or re.match(r'^[A-Za-z]+\.(json|md)$', u):
         return u
     for k, v in LINKS.items():
         if k in u:
@@ -132,7 +134,7 @@ for src, data, path, title, desc in PAGES:
     if data:
         shutil.copyfile(os.path.join(SRC, data), os.path.join(out_dir, 'map.json'))
         extra = '<p>The same map as data: <a href="map.json">map.json</a> (visibility and evolution from 0 to 1, links, movements). A draft, <span class="tag prop">Proposal</span>.</p>'
-    moved = f'<p>Moved here from PrompTugal__News__Website on 24 November 2026; the history before that is in <a href="{OLD}">board/team/strategy.d/</a>.</p>'
+    moved = '' if src == 'area.md' else f'<p>Moved here from PrompTugal__News__Website on 24 November 2026; the history before that is in <a href="{OLD}">board/team/strategy.d/</a>.</p>'
     body = f'{crumbs}\n{mark}\n<h1>{html.escape(title)}</h1>\n{extra}\n{body}\n{moved}'
     open(os.path.join(out_dir, 'index.html'), 'w').write(page(path, title, desc, body))
     print('wrote', path)
