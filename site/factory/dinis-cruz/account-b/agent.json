@@ -17,9 +17,9 @@
  "waiting_on": [
   "Dinis: the first ten contacts for segment A (names to him only)",
   "Dinis: how buyers pay for the £50 / €50 launch offer (raised by outreach.b via b.decisions)",
-  "Dinis: whose Google app for the twin backup (ours for Calendar, owners' own for Gmail, recommended)"
+  "Dinis: whose Google app for the twin backup, and whether the demo is free (request https://strategy.agents.sovereignweb.site/decisions/requests/2026-11-24__twin-backup-google-app.json)"
  ],
- "updated": "2026-11-24T00:22Z",
+ "updated": "2026-11-24T00:34Z",
  "wakes": "none (Dinis re-enables wakes himself)",
  "read": {
   "role": "factory/dinis-cruz/account-b/role.md",

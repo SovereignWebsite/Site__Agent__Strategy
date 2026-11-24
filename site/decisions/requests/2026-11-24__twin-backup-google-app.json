@@ -1,0 +1,45 @@
+{
+ "v": 1,
+ "id": "2026-11-24__twin-backup-google-app",
+ "agent": "strategy.b@SovereignWebsite.dinis",
+ "account": "B",
+ "asked_at": "2026-11-24T00:34:35Z",
+ "session": "https://claude.ai/code/session_01Kw9UwDF1rJD6h9xEsVg5bx",
+ "title": "The Calendar and Gmail backup from a twin: whose Google app, and is the demo free",
+ "change": {
+  "repository": "none (a choice that shapes the use case and a.mail's build)",
+  "branch": "dev",
+  "paths": [],
+  "commits": [],
+  "patch_ids": []
+ },
+ "why": "Dinis's memo of 24 Nov 00:10 UTC asks for backups from digital twins, Calendar first, then Gmail, with OAuth from the website. Reading Calendar is a 'sensitive' Google scope (app verification). gmail.readonly is 'restricted': an app whose data goes 'from or through a third-party server' needs a CASA security assessment 'at least every 12 months'. Whether a browser-only app with no server of ours still needs it is not settled by Google's pages. Who owns the Google app decides who carries that burden. The use case page (live) sets out the capability, the pain, exists against designed, and how to tell it.",
+ "checks": [
+  "sources: Google Help and Google for Developers pages, read 24 Nov 2026, cited on the page",
+  "no private person named",
+  "no price set"
+ ],
+ "kind": "choice",
+ "flags": {
+  "main": false,
+  "money": false,
+  "legal": true,
+  "one_way_door": false,
+  "private_person": false,
+  "unfixed_vulnerability": false
+ },
+ "options": [
+  "a) Our Google app for Calendar (one sensitive-scope verification; the public demo needs it); each owner's own Google app for Gmail until the yearly assessment question is settled",
+  "b) Our Google app for both Calendar and Gmail (we carry Gmail's restricted-scope verification and, if it applies, the yearly assessment)",
+  "c) Each owner's own Google app for both (the fork-it-yourself route; no public demo of ours)",
+  "and separately: d) the demo is free, with no sign-up and no price set; or e) not yet decided"
+ ],
+ "recommendation": "a) and d)",
+ "needed_by": "2026-11-26T18:00:00Z",
+ "links": [
+  "https://strategy.agents.sovereignweb.site/accounts/b/use-cases/twin-backups/",
+  "https://github.com/PrompTugal/PrompTugal__News__Website/blob/dev/board/guidance/2026-11-24-twins-backups-and-browser-components.md",
+  "https://developers.google.com/identity/protocols/oauth2/production-readiness/restricted-scope-verification",
+  "https://developers.google.com/identity/protocols/oauth2/production-readiness/sensitive-scope-verification"
+ ]
+}
