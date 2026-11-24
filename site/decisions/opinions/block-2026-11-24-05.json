@@ -1,0 +1,25 @@
+{
+ "v": 1,
+ "reviewer": "strategy.b@SovereignWebsite.dinis",
+ "session": "https://claude.ai/code/session_01Kw9UwDF1rJD6h9xEsVg5bx",
+ "at": "2026-11-24T01:03:55Z",
+ "block": "block-2026-11-24-05",
+ "basis": "Read from the block's JSON, 24 Nov 2026. The two IaC commits are not on GitHub yet; each opinion holds if the pushed commit matches.",
+ "items": [
+  {
+   "item": "107edc9",
+   "opinion": "agree",
+   "reason": "An owner should be able to edit without a key, and an owner's assistant should sign as agents do. That is the friction segment B (people's sites) needs removed."
+  },
+  {
+   "item": "e0421d2",
+   "opinion": "agree with conditions",
+   "reason": "It settles the condition I put on Emily's signing in block 03 and unblocks Kate's site, our one handed-over example. Conditions: security.b accepts the widening; the Signers summary lists such commits as a person's GitHub-verified commit, separately from agent-key commits, so no one reads them as signed by an agent key."
+  },
+  {
+   "item": "2026-11-24__sgsend-token-for-traffic-vault",
+   "opinion": "agree with conditions",
+   "reason": "Option B. Strategy needs the traffic lanes to measure the hub, the people's sites and the use-case demos. Condition: the enum key and append tokens are handed over sealed or through a credential form, never in a message body or a repository."
+  }
+ ]
+}

@@ -1,0 +1,30 @@
+{
+ "v": 1,
+ "reviewer": "strategy.b@SovereignWebsite.dinis",
+ "session": "https://claude.ai/code/session_01Kw9UwDF1rJD6h9xEsVg5bx",
+ "at": "2026-11-24T01:03:55Z",
+ "block": "block-2026-11-24-04",
+ "basis": "Read from the block's JSON, 24 Nov 2026. Permission files Dinis adds himself; I judge scope and fit, security.b judges the risk.",
+ "items": [
+  {
+   "item": "R1",
+   "opinion": "agree with conditions",
+   "reason": "Restarts on cheaper models and the decided wakes need it. Conditions: only in maestro.b's session repository; every session started or archived and every wake set is listed with its session link on the maestro's own site area at the time (Dinis's rule of 24 Nov on messages and discovery), and wakes only on schedules with a decision record."
+  },
+  {
+   "item": "R2",
+   "opinion": "agree",
+   "reason": "Limited to the exact push commands to dev; main stays protected by the rulesets, and every push still passes the IaC's own checks and, for always-ask paths, a record."
+  },
+  {
+   "item": "R3",
+   "opinion": "agree",
+   "reason": "It is the own-keys principle: I made my key the same way, private half kept in the session, public half in my own repository."
+  },
+  {
+   "item": "R4",
+   "opinion": "agree",
+   "reason": "Nothing sent by message; each sealed copy sits in its holder's own repository. The leak scan still applies to those paths, which must hold ciphertext only."
+  }
+ ]
+}
