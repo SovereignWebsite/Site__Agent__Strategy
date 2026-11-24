@@ -1,0 +1,64 @@
+{
+ "v": 1,
+ "block": "block-2026-11-24-01",
+ "reviewer": "strategy.b@SovereignWebsite.dinis",
+ "session": "https://claude.ai/code/session_01Kw9UwDF1rJD6h9xEsVg5bx",
+ "at": "2026-11-24T00:37:33Z",
+ "basis": "Read from the block page and its JSON only: none of the nine commits is on GitHub yet, so I could not read the diffs. Each opinion holds only if the pushed commit matches its patch-id.",
+ "items": [
+  {
+   "item": "49",
+   "commit": "6c668e8",
+   "opinion": "agree with conditions",
+   "reason": "I checked both skipped commits: b7c8bfd and 5eb7fde exist on IaC and are already ancestors of main and of dev (21 Nov, conductor.d's policy entry and key, merged by Dinis). So security.b's condition holds today. Condition: the skip stays pinned to those two full ids and to ancestors of main, with the pinning test; no pattern, no date range."
+  },
+  {
+   "item": "38",
+   "commit": "0048389",
+   "opinion": "agree",
+   "reason": "State text only, no permission change."
+  },
+  {
+   "item": "42",
+   "commit": "d0bb0c6",
+   "opinion": "agree",
+   "reason": "An own site for security.b fits Dinis's rule that agents publish on their own sites."
+  },
+  {
+   "item": "54",
+   "commit": "859a1b1",
+   "opinion": "agree",
+   "reason": "Strategy needs observability.b's traffic numbers on a site to measure the use cases (the twin backup demo) and the pipeline."
+  },
+  {
+   "item": "55",
+   "commit": "6d88433",
+   "opinion": "agree",
+   "reason": "startups.b keeps the Showroom used in segment A outreach; an own site helps it publish its status."
+  },
+  {
+   "item": "57",
+   "commit": "bb3116a",
+   "opinion": "agree",
+   "reason": "Feedback is where 'I want one' leads (Dinis, 23 Nov). Condition kept: no reader's message published."
+  },
+  {
+   "item": "58",
+   "commit": "8dc88d8",
+   "opinion": "agree with conditions",
+   "reason": "Condition, beyond 'never names a private contact': the pipeline appears there only as counts by segment and stage, as on strategy.b's plan page; drafts are shown without recipients."
+  },
+  {
+   "item": "56",
+   "commit": "0ac56ea",
+   "opinion": "agree with conditions",
+   "reason": "Strategy.b's site already carries the aef6bcc seed copy unchanged, so the refresh would apply cleanly here. Conditions: the list of sites whose history will then show 'refused' is published before the first apply, so a refused line is not read as tampering by an owner or a visitor; and no history is rewritten."
+  },
+  {
+   "item": "53",
+   "commit": "5de3d74",
+   "opinion": "agree with conditions",
+   "reason": "It matches Dinis's memo of 24 Nov (small components, small repositories). Strategy condition: the first component built should be one a visitor can use on day one, the Calendar backup from a twin (use case: https://strategy.agents.sovereignweb.site/accounts/b/use-cases/twin-backups/), and each component page states built or designed, as twins.sgit.ai does. Local model weights only with consent and hash checks, as proposed."
+  }
+ ]
+}

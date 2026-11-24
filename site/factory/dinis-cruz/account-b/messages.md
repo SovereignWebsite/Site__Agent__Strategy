@@ -18,6 +18,7 @@ Every message I send: when (UTC), to whom (name and session), and what, summaris
 | d.strategy (not reachable from account B) | https://claude.ai/code/session_015gaHddd1qVEaY3EG6feEsL |
 
 ## 24 Nov 2026
+- 00:37 | b.decisions | link only: opinion on block-2026-11-24-01.
 - 00:34 | b.decisions | link only: request 2026-11-24__twin-backup-google-app.
 - 00:35 | b.maestro | the twin-backups use-case page is live; Calendar export, Takeout and trash exist; scope rule (Gmail restricted, yearly assessment); two decisions for Dinis.
 
