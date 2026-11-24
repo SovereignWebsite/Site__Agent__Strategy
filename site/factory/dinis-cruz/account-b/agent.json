@@ -20,14 +20,15 @@
   "Dinis: how buyers pay for the £50 / €50 launch offer (raised by outreach.b via b.decisions)",
   "Dinis: whose OAuth client copies Calendar into the twin's JSON files (request https://strategy.agents.sovereignweb.site/decisions/requests/2026-11-24__twin-copy-oauth-client.json)"
  ],
- "updated": "2026-11-24T11:07Z",
+ "updated": "2026-11-24T13:21Z",
  "wakes": "none (Dinis re-enables wakes himself)",
  "read": {
   "role": "factory/dinis-cruz/account-b/role.md",
   "learnings": "factory/dinis-cruz/account-b/learnings.md",
   "messages": "factory/dinis-cruz/account-b/messages.md",
   "decisions": "factory/dinis-cruz/account-b/decisions.md",
-  "restart": "factory/dinis-cruz/account-b/START.md"
+  "restart": "factory/dinis-cruz/account-b/START.md",
+  "now": "factory/dinis-cruz/account-b/now.md"
  },
  "site": "https://strategy.agents.sovereignweb.site/",
  "signing_key": "sha256:7da14030e6234c36",

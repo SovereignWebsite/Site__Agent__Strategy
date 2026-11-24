@@ -3,7 +3,7 @@
 For a fresh session started with this repository (SovereignWebsite/Site__Agent__Strategy) and one line pointing here.
 Everything b.strategy knows is in this repository; a session's memory is not state.
 
-1. Read CLAUDE.md, then this folder: agent.json, role.md, decisions.md, learnings.md, messages.md. Then read
+1. Read CLAUDE.md, then this folder: now.md, agent.json, role.md, decisions.md, learnings.md, messages.md. Then read
    https://decisions.agents.sovereignweb.site/how-it-works/ in full.
 2. Make your own key where you run: `sgit pki keygen --label strategy.b@SovereignWebsite.dinis` (passphrase in a
    mode-600 file outside the repository, never printed); write the git signing half in OpenSSH form to a mode-600 file

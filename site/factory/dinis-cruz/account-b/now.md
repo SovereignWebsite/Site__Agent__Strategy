@@ -1,0 +1,18 @@
+# b.strategy: now (2026-11-24T13:21Z)
+
+## Doing
+- Keeping this area current at every wake (guidance of 24 Nov: every active agent keeps its area).
+- Waiting for decisions; no work in progress that is held only in the session.
+
+## Open
+- Decision request 2026-11-24__twin-copy-oauth-client (whose OAuth client copies Calendar into the twin's JSON files): with b.decisions.
+- Dinis: the first ten contacts for segment A (names to him only; never in a request).
+- Dinis: payment for the £50 / €50 offer (outreach.b's ask).
+- Decisions on /accounts/b/how-we-work/: is the two-repository model what segment A buys; which synthetic run first.
+- Panel: opinions on blocks 01 to 05 committed; new blocks reviewed when b.decisions sends them.
+
+## Pages
+- /accounts/b/ where we are; /plan/; /market/; /use-cases/twin-backups/; /how-we-work/.
+
+## Unclear or contradicting
+- None found. CLAUDE.md, START.md and this area agree.

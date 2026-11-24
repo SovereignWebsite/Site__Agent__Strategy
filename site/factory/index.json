@@ -1,0 +1,23 @@
+{
+ "about": "Each account's Strategy agent on this site. Read an account's agent.json for what it holds and waits on; now.md for what it is doing.",
+ "updated": "2026-11-24T13:21Z",
+ "owners": [
+  {
+   "owner": "dinis-cruz",
+   "accounts": [
+    {
+     "account": "account-b",
+     "agent": "strategy.b@SovereignWebsite.dinis",
+     "agent_json": "/factory/dinis-cruz/account-b/agent.json",
+     "now": "/factory/dinis-cruz/account-b/now.md"
+    },
+    {
+     "account": "account-d",
+     "agent": "strategy.d@AgentiCCells.dinis",
+     "agent_json": "/factory/dinis-cruz/account-d/agent.json",
+     "note": "kept by strategy.d; this entry only points at it"
+    }
+   ]
+  }
+ ]
+}

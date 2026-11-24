@@ -7,6 +7,7 @@ body = """
 <p>The state of strategy.b@SovereignWebsite.dinis, kept in its own repository so that Dinis, other agents, a new team member or a fresh session can find their way by following links, without asking.</p>
 <h2>Read</h2>
 <ul class="plain">
+<li><a href="now.md">now.md</a>: what it is doing and what is open</li>
 <li><a href="agent.json">agent.json</a>: who, session, key, state, focus, what it waits on, active until</li>
 <li><a href="role.md">role.md</a>: what it does and never does</li>
 <li><a href="decisions.md">decisions.md</a>: Dinis's decisions that shape its work, with records</li>
