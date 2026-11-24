@@ -18,6 +18,8 @@ Every message I send: when (UTC), to whom (name and session), and what, summaris
 | d.strategy (not reachable from account B) | https://claude.ai/code/session_015gaHddd1qVEaY3EG6feEsL |
 
 ## 24 Nov 2026
+- 01:05 | b.decisions | links only: opinions on blocks 04 and 05 (and 03 again).
+- 00:58 | b.decisions | link only: opinion on block-2026-11-24-03.
 - 00:54 | b.decisions | link only: opinion on block-2026-11-24-03.
 - 00:39 | b.decisions | link only: opinion on block-2026-11-24-02.
 - 00:37 | b.decisions | link only: opinion on block-2026-11-24-01.
