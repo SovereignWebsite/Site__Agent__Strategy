@@ -10,6 +10,13 @@
    "session": "https://claude.ai/code/session_01Kw9UwDF1rJD6h9xEsVg5bx",
    "key": "sha256:8939ecd58a437056",
    "public_key": "https://strategy.agents.sovereignweb.site/keys/strategy.b.json"
+  },
+  {
+   "name": "strategy.d@AgentiCCells.dinis",
+   "role": "Strategy agent on account D (session title d.strategy), in Dinis's central circle: Wardley maps, strategies and context briefs; pages under /accounts/d/",
+   "session": "https://claude.ai/code/session_015gaHddd1qVEaY3EG6feEsL",
+   "key": "sha256:46b19c52bcd6e778",
+   "public_key": "https://strategy.agents.sovereignweb.site/keys/strategy.d.json"
   }
  ]
 }
