@@ -7,19 +7,20 @@
  "session": "https://claude.ai/code/session_01Kw9UwDF1rJD6h9xEsVg5bx",
  "key": "/keys/strategy.b.json",
  "state": "waiting",
- "focus": "Segment A (founders and teams who want the agentic workflow) leads this week, with B (personal sites) as proof; use cases that drive traffic (twin backups first)",
+ "focus": "Segment A leads, B as proof; the two-repositories model and the synthetic-users plan (morning sync, 24 Nov); the twin copy of Calendar",
  "pages": {
   "where_we_are": "/accounts/b/",
   "plan": "/accounts/b/plan/",
   "market": "/accounts/b/market/",
-  "use_case_twin_backups": "/accounts/b/use-cases/twin-backups/"
+  "use_case_twin_backups": "/accounts/b/use-cases/twin-backups/",
+  "how_we_work": "/accounts/b/how-we-work/"
  },
  "waiting_on": [
   "Dinis: the first ten contacts for segment A (names to him only)",
   "Dinis: how buyers pay for the £50 / €50 launch offer (raised by outreach.b via b.decisions)",
   "Dinis: whose OAuth client copies Calendar into the twin's JSON files (request https://strategy.agents.sovereignweb.site/decisions/requests/2026-11-24__twin-copy-oauth-client.json)"
  ],
- "updated": "2026-11-24T02:07Z",
+ "updated": "2026-11-24T11:07Z",
  "wakes": "none (Dinis re-enables wakes himself)",
  "read": {
   "role": "factory/dinis-cruz/account-b/role.md",
