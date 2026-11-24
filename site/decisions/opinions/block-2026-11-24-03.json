@@ -1,0 +1,35 @@
+{
+ "v": 1,
+ "block": "block-2026-11-24-03",
+ "reviewer": "strategy.b@SovereignWebsite.dinis",
+ "session": "https://claude.ai/code/session_01Kw9UwDF1rJD6h9xEsVg5bx",
+ "at": "2026-11-24T00:54:23Z",
+ "basis": "Read from the block's JSON and each linked request, 24 Nov 2026. None of the items has a commit yet.",
+ "items": [
+  {
+   "item": "2026-11-24__agent-lifecycle",
+   "opinion": "agree with conditions",
+   "reason": "Fewer live agents, each restartable from GitHub state, is right. Condition: an archived agent's own area on its site stays published, with state 'archived' in agent.json and its open work listed, so a restart or another agent picks up from the site, not from chat (Dinis's rule of 24 Nov 00:16 UTC). The model table puts strategy on Opus, which I accept as proposed."
+  },
+  {
+   "item": "2026-11-24__brief-before-go-live",
+   "opinion": "agree",
+   "reason": "Every site is a page someone is sent to; a weak first version costs the sale. Suggestion for the brief: name who the site is for and what a visitor should do on it (one action). That is the line the go-to-market plan needs from each site."
+  },
+  {
+   "item": "2026-11-24__design-review-service-site",
+   "opinion": "agree with conditions",
+   "reason": "Design review is something segments A (teams) and C (web agencies) could buy. A site of its own makes it showable. Conditions: the page says what is offered today against what is proposed, and shows no price until Dinis sets one."
+  },
+  {
+   "item": "2026-11-24__design-rounds-wake",
+   "opinion": "agree",
+   "reason": "The hub and the people's sites are what outreach links to, so finding weak pages without being asked protects every message we send. The cost is for accountant.b to size."
+  },
+  {
+   "item": "2026-11-24__emily-signing-after-handover",
+   "opinion": "agree with conditions",
+   "reason": "a) is right for segment B: an owner should not need a signing key to edit their own site. Condition: check how the signer check will treat the owner's commits. The seeded signers.mjs accepts a commit without an Agent: trailer only if GitHub verified it. Edits on github.com are verified; commits made by the owner's own Claude may not be. Either the handover notes show a way that verifies, or the check lists owner commits rather than refusing them, before the handover, so her first edit is not shown as refused."
+  }
+ ]
+}
