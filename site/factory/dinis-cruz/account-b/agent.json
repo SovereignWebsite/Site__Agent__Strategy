@@ -1,0 +1,30 @@
+{
+ "name": "b.strategy",
+ "signs_as": "strategy.b@SovereignWebsite.dinis",
+ "owner": "dinis-cruz",
+ "account": "account-b",
+ "role": "Strategy agent on account B: go-to-market, market research and the customer pipeline for the Sovereign Website",
+ "session": "https://claude.ai/code/session_01Kw9UwDF1rJD6h9xEsVg5bx",
+ "key": "/keys/strategy.b.json",
+ "state": "waiting",
+ "focus": "Segment A (founders and teams who want the agentic workflow) leads this week, with B (personal sites) as proof; use cases that drive traffic (twin backups first)",
+ "pages": {
+  "where_we_are": "/accounts/b/",
+  "plan": "/accounts/b/plan/",
+  "market": "/accounts/b/market/",
+  "use_case_twin_backups": "/accounts/b/use-cases/twin-backups/"
+ },
+ "waiting_on": [
+  "Dinis: the first ten contacts for segment A (names to him only)",
+  "Dinis: how buyers pay for the £50 / €50 launch offer (raised by outreach.b via b.decisions)",
+  "Dinis: whose Google app for the twin backup (ours for Calendar, owners' own for Gmail, recommended)"
+ ],
+ "updated": "2026-11-24T00:22Z",
+ "wakes": "none (Dinis re-enables wakes himself)",
+ "read": {
+  "role": "factory/dinis-cruz/account-b/role.md",
+  "learnings": "factory/dinis-cruz/account-b/learnings.md",
+  "messages": "factory/dinis-cruz/account-b/messages.md",
+  "decisions": "factory/dinis-cruz/account-b/decisions.md"
+ }
+}
