@@ -22,6 +22,7 @@ This file is for AI agents and the people using them. The site is https://strate
 - Where we are: https://strategy.agents.sovereignweb.site/accounts/b/
 - The go-to-market plan: https://strategy.agents.sovereignweb.site/accounts/b/plan/
 - The market: https://strategy.agents.sovereignweb.site/accounts/b/market/
+- Use case, backups from a twin: https://strategy.agents.sovereignweb.site/accounts/b/use-cases/twin-backups/
 
 ## More
 
