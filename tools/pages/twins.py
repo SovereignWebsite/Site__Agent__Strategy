@@ -1,0 +1,90 @@
+import sys, os; HERE = os.path.dirname(os.path.abspath(__file__)); sys.path.insert(0, HERE); G = HERE
+from page import page
+body = """
+<p class="crumbs"><a href="/">Strategy</a> / <a href="/accounts/b/">Account B</a> / Use case: backups from a twin</p>
+<div class="mark">strategy.b, account B, 24 November 2026, version 0.2 (rewritten after Dinis's clarification, 24 Nov 01:05 UTC)</div>
+<h1>Use case: your Calendar and Gmail, copied into a twin you hold</h1>
+<p>From Dinis's strategy memo of 24 Nov, about 00:10 UTC: "I'm trying to find these sort of use cases that we can see that we provide a unique capability, because that's what will drive traffic, that's what will drive activities." (<a href="https://github.com/PrompTugal/PrompTugal__News__Website/blob/dev/board/guidance/2026-11-24-twins-backups-and-browser-components.md">the memo, verbatim</a>). <span class="tag fact">Fact</span> marks what a public page says, read 24 Nov 2026; <span class="tag prop">Proposal</span> marks what I suggest.</p>
+
+<h2>What the backup is <span class="tag fact">Decided</span></h2>
+<p>Dinis, 24 Nov 2026 01:05 UTC: "we create a copy from the Google Calendar, which is the data that we copy from OAuth, from, for example, Google Calendar into a digital twin, i.e. the JSON files, or the file that we grab from a Gmail into the JSON files. That's the backup that I'm talking about." (<a href="https://decisions.agents.sovereignweb.site/records/2026-11-24__twin-backup-meaning.json">record 2026-11-24__twin-backup-meaning</a>)</p>
+<p>So the backup is <strong>the twin's own files</strong>: not Google's backup products, and not a backup service.</p>
+
+<h2>The capability <span class="tag prop">Proposal</span></h2>
+<ol>
+<li><strong>Copy.</strong> The person opens a page and signs in to Google from it (OAuth). The page reads their Calendar events, later their Gmail, through Google's API.</li>
+<li><strong>Into JSON files.</strong> Each event and each message becomes a plain JSON file: the digital twin. The person can open, search, diff and move those files.</li>
+<li><strong>Versioned.</strong> The files live in a Git-style history, so every change to an event is kept: "a version controlled, Git version of email" (Dinis's memo).</li>
+<li><strong>Held by the person.</strong> The files stay in the browser's own storage, then in the person's encrypted vault, "encrypted with a user's key". The OAuth token stays in the browser; nothing passes through our servers.</li>
+<li><strong>Kept fresh.</strong> While the tab is open, the page checks for changes every few minutes and backs off when nothing moves.</li>
+</ol>
+<p>The files are the product. Everything else (better search, download, filters, agents working on the copy under a policy) is built on them.</p>
+
+<h2>Why a copy you hold matters <span class="tag fact">Fact</span></h2>
+<p>What Google gives a person today, for comparison:</p>
+<div class="wrap"><table>
+<caption class="skip">Google's own backup options</caption>
+<thead><tr><th scope="col">What</th><th scope="col">What it does</th><th scope="col">Source</th></tr></thead>
+<tbody>
+<tr><td>Calendar export</td><td>A manual .ics file, from a computer only: "The exported file is an .ics file, which you can import into other calendar apps."</td><td>Calendar Help: <code>https://support.google.com/calendar/answer/37111</code></td></tr>
+<tr><td>Calendar trash</td><td>"When you delete an event ... it stays in that calendar's trash for 30 days."</td><td>Calendar Help: <code>https://support.google.com/calendar/answer/37113</code></td></tr>
+<tr><td>Gmail trash</td><td>"After 30 days: ... The message is permanently deleted."</td><td>Gmail Help: <code>https://support.google.com/mail/answer/7401</code></td></tr>
+<tr><td>Google Takeout</td><td>An archive once, or "Automatically create an archive of your selected data every 2 months for one year", as zip or tgz files</td><td>Google Account Help: <code>https://support.google.com/accounts/answer/3024190</code></td></tr>
+</tbody>
+</table></div>
+<p class="crumbs">Google Help pages refuse the automated link check this site runs, so their addresses are shown as text, not links; each was read on 24 Nov 2026.</p>
+<p>So a person can export, but by hand, or at best every two months for a year; and anything deleted is gone after 30 days. There is no continuous, versioned copy that the person holds.</p>
+<p>What businesses buy instead (Google Workspace only), each holding the copy on its own servers:</p>
+<div class="wrap"><table>
+<caption class="skip">Backup services</caption>
+<thead><tr><th scope="col">Service</th><th scope="col">Price as published</th><th scope="col">Who it serves</th></tr></thead>
+<tbody>
+<tr><td><a href="https://knowledge.workspace.google.com/admin/vault/buy-vault-licenses-for-your-organization?hl=en">Google Vault</a></td><td>No price; included in Business Plus, Enterprise and Education editions</td><td>Workspace only</td></tr>
+<tr><td><a href="https://www.idrive.com/backupify-googleworkspace">Backupify</a></td><td>"$36/user/Year"</td><td>Workspace</td></tr>
+<tr><td><a href="https://www.afi.ai/pricing">Afi</a></td><td>$3 a month or $36 a year per user, from 5 users (from the page's billing script; check before quoting)</td><td>Workspace and Microsoft 365</td></tr>
+<tr><td><a href="https://www.syscloud.com/cloud-backup-pricing/">SysCloud</a></td><td>Per user per year, by calculator; "We do not cater to individual users."</td><td>Businesses</td></tr>
+</tbody>
+</table></div>
+<p><strong>The gap:</strong> none of the paid services read shows a plan for a personal Google account, and each holds your data on its own servers. The pain is sharpest for <strong>people and small teams on personal or small accounts</strong> (our segments A and B on the <a href="/accounts/b/plan/">plan</a>): a deleted calendar, a lost account, a mistake an agent made in the inbox, with no copy they own.</p>
+<p>Google's own data protection guide calls protection "a shared responsibility; a collaboration between the customer and the Cloud service provider" and says "The customer should have a policy that addresses the requirements for backup, recovery, and restoration" (<a href="https://services.google.com/fh/files/misc/google_workspace_data_protection_guide_en_dec2020.pdf">Workspace Data Protection Guide</a>, Dec 2020). I found no Google page that says a person must back up their own data; the stronger claims come from backup vendors.</p>
+
+<h2>What exists today, and what is designed <span class="tag fact">Fact</span></h2>
+<div class="wrap"><table>
+<caption class="skip">Build state</caption>
+<thead><tr><th scope="col">Piece</th><th scope="col">State</th><th scope="col">Source</th></tr></thead>
+<tbody>
+<tr><td>The twin primitive (a twin is an interface to a real thing, not a simulation)</td><td>Established, written up</td><td><a href="https://twins.sgit.ai/">twins.sgit.ai</a></td></tr>
+<tr><td>A working twin</td><td>One: an S3-compatible vault container ("code using boto3 ... believes it is talking to real S3")</td><td><a href="https://twins.sgit.ai/built/index.html">twins.sgit.ai, built</a></td></tr>
+<tr><td>A Calendar twin, a Gmail twin</td><td>Not listed as built on twins.sgit.ai. The build is account A's Gmail team (a.mail.*); I have not seen its state</td><td>b.maestro's routing in the memo</td></tr>
+<tr><td>OAuth from the page, sync while the tab is open, encryption with the user's key, a vault for the twin</td><td>Designed (Dinis's memo)</td><td>The memo</td></tr>
+<tr><td>Vaults: encrypted, versioned, open</td><td>Exists (SGit)</td><td><a href="https://sgit.startups.sovereignweb.site/">sgit</a></td></tr>
+<tr><td>Small components a site can add (local models, the Gmail capability, policies in the browser)</td><td>Designed; owned by conductor.b with factory.b and sites.b</td><td>The memo</td></tr>
+</tbody>
+</table></div>
+
+<h2>Google's rules, and what they allow first <span class="tag fact">Fact</span></h2>
+<ul class="plain">
+<li><strong>For Dinis's own accounts, no verification is needed.</strong> Google offers a Personal mode: "Personal mode apps do not require OAuth app verification, are not subject to the OAuth user cap or 7-day test user token expiration, and do not display the unverified app screen." It is for the Google Account that created the client. Google Cloud Help, OAuth consent and publishing status: <code>https://support.google.com/cloud/answer/15549945</code> (read 24 Nov 2026).</li>
+<li><strong>For a small demo group, Testing mode.</strong> A project "configured with a publishing status of Testing" is "limited to up to 100 test users", Google shows them a warning, and "Authorizations by a test user will expire seven days from the time of consent" (same page). The OAuth guide says the same of refresh tokens (<a href="https://developers.google.com/identity/protocols/oauth2">Google for Developers, OAuth 2.0</a>).</li>
+<li><strong>For the public, verification.</strong> An unverified app with sensitive or restricted scopes shows the unverified app screen and is "limited to 100 new users until it is verified" (Google Cloud Help, Unverified apps: <code>https://support.google.com/cloud/answer/7454865</code>). Reading Calendar is a sensitive scope (<a href="https://developers.google.com/identity/protocols/oauth2/production-readiness/sensitive-scope-verification">sensitive scopes</a>). Gmail's read scope is restricted (<a href="https://developers.google.com/workspace/gmail/api/auth/scopes">Gmail scopes</a>); restricted data going "from or through a third-party server" needs a security assessment "at least every 12 months" (<a href="https://developers.google.com/identity/protocols/oauth2/production-readiness/restricted-scope-verification">restricted-scope verification</a>).</li>
+</ul>
+<p>So the order is: build and show the copy on Dinis's own accounts (Personal mode), then a demo for up to 100 named testers (Testing mode), and only then the public, after verification. Nothing is said publicly about the public version until that step is decided.</p>
+
+<h2>How we would tell it <span class="tag prop">Proposal</span></h2>
+<ol>
+<li><strong>The line:</strong> "Your calendar, as files you hold. Every change kept, encrypted with your key, nothing on our servers."</li>
+<li><strong>The proof first:</strong> Dinis's own calendar copied into a twin, its JSON files and history shown (with private details hidden), as the first demo of the agentic workflow.</li>
+<li><strong>The honest lines beside it:</strong> it runs while the tab is open; Google already offers export, Takeout and a 30-day trash; the public version waits for Google's verification.</li>
+<li><strong>Who hears it first:</strong> segment A, founders and small teams, as proof the workflow is real; later segment B, as a free tool that leads to "I want one".</li>
+<li><strong>For traffic:</strong> "Your data as files you own." A newsroom article (b.newsroom, when Dinis says go).</li>
+<li><strong>As a component:</strong> the same copy as a small open component any sovereign website can add.</li>
+</ol>
+
+<h2>Decision for Dinis</h2>
+<div class="decide">
+<p><strong>Whose OAuth client does the copy?</strong> (<a href="/decisions/requests/2026-11-24__twin-copy-oauth-client.json">request 2026-11-24__twin-copy-oauth-client</a>; the earlier request 2026-11-24__twin-backup-google-app is withdrawn.)</p>
+<ul><li>a) Dinis's own client in Personal mode, for his own accounts first: no verification, no user cap, no 7-day expiry</li><li>b) one SovereignWebsite client in Testing mode, for up to 100 named testers, re-consenting every 7 days</li><li>c) each owner's own client (the fork-it-yourself route)</li></ul>
+<p>My recommendation: <strong>a) now</strong>, to build and show the copy; <strong>b) next</strong>, for the demo with segment A; verification only when a public version is decided.</p>
+</div>
+"""
+page('accounts/b/use-cases/twin-backups/', 'Use case: backups from a twin', 'strategy.b on account B: the Calendar and Gmail data copied over OAuth into a digital twin of JSON files the person holds: what it is, Google’s rules for doing it, what exists, and how to tell it.', body)
