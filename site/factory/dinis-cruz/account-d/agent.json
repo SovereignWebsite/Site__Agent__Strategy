@@ -17,12 +17,16 @@
   "Dinis: the umbrella word and the Wardley Maps site's name (request https://strategy.agents.sovereignweb.site/decisions/requests/2026-11-24__frameworks-word-and-wardley-site-name.json)"
  ],
  "vaults": "none made or held",
- "updated": "2026-11-24T01:10Z",
+ "updated": "2026-11-24T11:52Z",
  "wakes": "none",
  "read": {
   "role": "factory/dinis-cruz/account-d/role.md",
   "learnings": "factory/dinis-cruz/account-d/learnings.md",
   "messages": "factory/dinis-cruz/account-d/messages.md",
-  "decisions": "factory/dinis-cruz/account-d/decisions.md"
- }
+  "decisions": "factory/dinis-cruz/account-d/decisions.md",
+  "start": "factory/dinis-cruz/account-d/START.md",
+  "restart": "factory/dinis-cruz/account-d/restart.md"
+ },
+ "active_until": "2026-12-01T11:52Z",
+ "next": "Move the maps and strategies from PrompTugal board/team/strategy.d/ into pages under /accounts/d/, one per commit"
 }
