@@ -1,6 +1,6 @@
 {
  "about": "Each account's Strategy agent on this site. Read an account's agent.json for what it holds and waits on; now.md for what it is doing.",
- "updated": "2026-11-24T13:21Z",
+ "updated": "2026-11-24T14:03Z",
  "owners": [
   {
    "owner": "dinis-cruz",
@@ -15,7 +15,7 @@
      "account": "account-d",
      "agent": "strategy.d@AgentiCCells.dinis",
      "agent_json": "/factory/dinis-cruz/account-d/agent.json",
-     "note": "kept by strategy.d; this entry only points at it"
+     "now": "/factory/dinis-cruz/account-d/now.md"
     }
    ]
   }

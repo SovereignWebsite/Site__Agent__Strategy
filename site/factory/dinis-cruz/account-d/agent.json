@@ -9,15 +9,39 @@
  "state": "working",
  "focus": "Maps: decision-making (the framework as a product), the estate, Sovereign Website; strategies: platform sites (B to C to B, partners, twins as backups), the Wardley Maps site",
  "pages": {
-  "index": "/accounts/d/"
+  "index": "/accounts/d/",
+  "maps": [
+   "/accounts/d/maps/decision-making/",
+   "/accounts/d/maps/estate/",
+   "/accounts/d/maps/sovereign-website/"
+  ],
+  "strategies": [
+   "/accounts/d/strategy/platform-sites/",
+   "/accounts/d/strategy/wardley-maps-site/"
+  ],
+  "briefs": [
+   "/accounts/d/briefs/deciding-in-your-area/"
+  ]
  },
  "work_so_far": "https://github.com/PrompTugal/PrompTugal__News__Website/blob/dev/board/team/strategy.d",
  "waiting_on": [
-  "Dinis: send OpenRouter a written question (request https://strategy.agents.sovereignweb.site/decisions/requests/2026-11-24__openrouter-written-question.json)",
-  "Dinis: the umbrella word and the Wardley Maps site's name (request https://strategy.agents.sovereignweb.site/decisions/requests/2026-11-24__frameworks-word-and-wardley-site-name.json)"
+  {
+   "what": "OpenRouter written question",
+   "from": "Dinis, via d.decisions",
+   "request": "/decisions/requests/2026-11-24__openrouter-written-question.json"
+  },
+  {
+   "what": "the umbrella word and the Wardley Maps site name",
+   "from": "Dinis, via d.decisions",
+   "request": "/decisions/requests/2026-11-24__frameworks-word-and-wardley-site-name.json"
+  },
+  {
+   "what": "my behaviour policy",
+   "from": "abp@ (account B), relayed by d.maestro"
+  }
  ],
  "vaults": "none made or held",
- "updated": "2026-11-24T11:52Z",
+ "updated": "2026-11-24T14:03Z",
  "wakes": "none",
  "read": {
   "role": "factory/dinis-cruz/account-d/role.md",
@@ -25,8 +49,13 @@
   "messages": "factory/dinis-cruz/account-d/messages.md",
   "decisions": "factory/dinis-cruz/account-d/decisions.md",
   "start": "factory/dinis-cruz/account-d/START.md",
-  "restart": "factory/dinis-cruz/account-d/restart.md"
+  "restart": "factory/dinis-cruz/account-d/restart.md",
+  "now": "factory/dinis-cruz/account-d/now.md"
  },
- "active_until": "2026-12-01T11:52Z",
- "next": "Move the maps and strategies from PrompTugal board/team/strategy.d/ into pages under /accounts/d/, one per commit"
+ "active_until": "2026-12-01T14:03Z",
+ "next": "Move the maps and strategies from PrompTugal board/team/strategy.d/ into pages under /accounts/d/, one per commit",
+ "key_fingerprints": {
+  "encryption": "sha256:46b19c52bcd6e778",
+  "signing": "sha256:883e53e80cdee0b0"
+ }
 }
