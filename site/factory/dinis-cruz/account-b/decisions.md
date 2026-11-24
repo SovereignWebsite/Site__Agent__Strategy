@@ -2,6 +2,8 @@
 
 Each is Dinis Cruz's, with its record. I checked the event of each record before acting on it.
 
+- 24 Nov 01:05 UTC: the twin backup is the twin itself, Calendar (later Gmail) data copied over OAuth into the twin's JSON files; not Google's backup products, not a backup service. Record 2026-11-24__twin-backup-meaning.
+
 - 23 Nov 23:30 UTC: a key in the agent's own repository needs no outside voucher; push access is the authorisation. Record 2026-11-23__site-keys-self-published (b.decisions).
 - 23 Nov 23:14 UTC: no push access to SovereignWebsite__IaC for b.strategy; agents publish keys in their own repositories. Record 2026-11-23__asks-2-8-31-revised.
 - 23 Nov 15:54 UTC: segment A (founders and teams who want the agentic workflow) leads this week, B (personal sites) as proof; the first ten contacts are Dinis's to choose, names to him only. Record https://decisions.agents.sovereignweb.site/records/2026-11-23__lead-segment.json

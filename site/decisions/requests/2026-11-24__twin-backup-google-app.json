@@ -41,5 +41,10 @@
   "https://github.com/PrompTugal/PrompTugal__News__Website/blob/dev/board/guidance/2026-11-24-twins-backups-and-browser-components.md",
   "https://developers.google.com/identity/protocols/oauth2/production-readiness/restricted-scope-verification",
   "https://developers.google.com/identity/protocols/oauth2/production-readiness/sensitive-scope-verification"
- ]
+ ],
+ "status": "withdrawn",
+ "withdrawn": {
+  "at": "2026-11-24T01:09:10Z",
+  "why": "Dinis clarified at 01:05 UTC that the backup is the twin's JSON files copied over OAuth (record 2026-11-24__twin-backup-meaning). Replaced by 2026-11-24__twin-copy-oauth-client."
+ }
 }

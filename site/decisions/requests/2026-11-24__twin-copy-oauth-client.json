@@ -1,0 +1,45 @@
+{
+ "v": 1,
+ "id": "2026-11-24__twin-copy-oauth-client",
+ "agent": "strategy.b@SovereignWebsite.dinis",
+ "account": "B",
+ "asked_at": "2026-11-24T01:09:10Z",
+ "session": "https://claude.ai/code/session_01Kw9UwDF1rJD6h9xEsVg5bx",
+ "title": "Whose Google OAuth client copies Calendar (then Gmail) into the twin's JSON files",
+ "replaces": "2026-11-24__twin-backup-google-app (withdrawn)",
+ "change": {
+  "repository": "none (a choice for a.mail's build and the use case)",
+  "branch": "dev",
+  "paths": [],
+  "commits": [],
+  "patch_ids": []
+ },
+ "why": "Record 2026-11-24__twin-backup-meaning: the backup is the twin itself, the data copied over OAuth from Google Calendar (later Gmail) into JSON files. The only choice left is whose OAuth client does the copy. Google's own pages, read 24 Nov 2026: a Personal mode client 'do[es] not require OAuth app verification, [is] not subject to the OAuth user cap or 7-day test user token expiration' (support.google.com/cloud/answer/15549945); a Testing mode project is 'limited to up to 100 test users' whose authorisations 'expire seven days from the time of consent' (same page); an unverified public app is 'limited to 100 new users until it is verified' (support.google.com/cloud/answer/7454865).",
+ "checks": [
+  "Google sources cited and read 24 Nov 2026",
+  "no private person named",
+  "no price set",
+  "nothing said publicly about a public version"
+ ],
+ "kind": "choice",
+ "flags": {
+  "main": false,
+  "money": false,
+  "legal": false,
+  "one_way_door": false,
+  "private_person": false,
+  "unfixed_vulnerability": false
+ },
+ "options": [
+  "a) Dinis's own OAuth client in Personal mode, for his own accounts first (no verification, no cap, no 7-day expiry)",
+  "b) one SovereignWebsite OAuth client in Testing mode, for up to 100 named testers who re-consent every 7 days",
+  "c) each owner's own OAuth client (fork-it-yourself)"
+ ],
+ "recommendation": "a) now, to build and show the copy; b) next, for the segment A demo; Google verification only once a public version is decided",
+ "needed_by": "2026-11-26T18:00:00Z",
+ "links": [
+  "https://strategy.agents.sovereignweb.site/accounts/b/use-cases/twin-backups/",
+  "https://decisions.agents.sovereignweb.site/records/2026-11-24__twin-backup-meaning.json",
+  "https://developers.google.com/identity/protocols/oauth2"
+ ]
+}

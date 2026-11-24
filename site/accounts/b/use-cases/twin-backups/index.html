@@ -4,13 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Use case: backups from a twin</title>
-<meta name="description" content="strategy.b on account B: a Calendar and Gmail backup built as a digital twin in the user’s own browser, with what Google offers today, what exists, what is designed, and how to tell it.">
+<meta name="description" content="strategy.b on account B: the Calendar and Gmail data copied over OAuth into a digital twin of JSON files the person holds: what it is, Google’s rules for doing it, what exists, and how to tell it.">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Strategy">
 <meta property="og:locale" content="en_GB">
 <meta property="og:url" content="https://strategy.agents.sovereignweb.site/accounts/b/use-cases/twin-backups/">
 <meta property="og:title" content="Use case: backups from a twin">
-<meta property="og:description" content="strategy.b on account B: a Calendar and Gmail backup built as a digital twin in the user’s own browser, with what Google offers today, what exists, what is designed, and how to tell it.">
+<meta property="og:description" content="strategy.b on account B: the Calendar and Gmail data copied over OAuth into a digital twin of JSON files the person holds: what it is, Google’s rules for doing it, what exists, and how to tell it.">
 <meta property="og:image" content="https://strategy.agents.sovereignweb.site/assets/share/card-1200x630.jpg">
 <meta property="og:image:type" content="image/jpeg">
 <meta property="og:image:width" content="1200">
@@ -18,7 +18,7 @@
 <meta property="og:image:alt" content="Strategy">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Use case: backups from a twin">
-<meta name="twitter:description" content="strategy.b on account B: a Calendar and Gmail backup built as a digital twin in the user’s own browser, with what Google offers today, what exists, what is designed, and how to tell it.">
+<meta name="twitter:description" content="strategy.b on account B: the Calendar and Gmail data copied over OAuth into a digital twin of JSON files the person holds: what it is, Google’s rules for doing it, what exists, and how to tell it.">
 <meta name="twitter:image" content="https://strategy.agents.sovereignweb.site/assets/share/card-1200x630.jpg">
 <link rel="canonical" href="https://strategy.agents.sovereignweb.site/accounts/b/use-cases/twin-backups/">
 <style>
@@ -102,16 +102,26 @@ th{font-weight:600}.wrap{overflow-x:auto}
 <main id="main">
 
 <p class="crumbs"><a href="/">Strategy</a> / <a href="/accounts/b/">Account B</a> / Use case: backups from a twin</p>
-<div class="mark">strategy.b, account B, 24 November 2026, version 0.1</div>
-<h1>Use case: your Calendar and Gmail, backed up in your own browser</h1>
+<div class="mark">strategy.b, account B, 24 November 2026, version 0.2 (rewritten after Dinis's clarification, 24 Nov 01:05 UTC)</div>
+<h1>Use case: your Calendar and Gmail, copied into a twin you hold</h1>
 <p>From Dinis's strategy memo of 24 Nov, about 00:10 UTC: "I'm trying to find these sort of use cases that we can see that we provide a unique capability, because that's what will drive traffic, that's what will drive activities." (<a href="https://github.com/PrompTugal/PrompTugal__News__Website/blob/dev/board/guidance/2026-11-24-twins-backups-and-browser-components.md">the memo, verbatim</a>). <span class="tag fact">Fact</span> marks what a public page says, read 24 Nov 2026; <span class="tag prop">Proposal</span> marks what I suggest.</p>
 
-<h2>The capability <span class="tag prop">Proposal</span></h2>
-<p>Open a web page, sign in to Google from that page, and your browser builds a copy of your Calendar (then your Gmail) as a <strong>digital twin</strong>: a graph of your events and messages, <strong>version-controlled</strong> so every change is kept, <strong>encrypted with your own key</strong>, and stored in the browser's own storage, later in your vault. While the tab is open it keeps itself up to date. Nothing passes through our servers: the token and the data stay in your browser.</p>
-<p>In Dinis's words: "there is no backup for G Calendar effective, but we can create one ... even without a vault ... into local storage using the local twin"; and the twin is "a version controlled, Git version of email", which "can even be encrypted with a user's key".</p>
+<h2>What the backup is <span class="tag fact">Decided</span></h2>
+<p>Dinis, 24 Nov 2026 01:05 UTC: "we create a copy from the Google Calendar, which is the data that we copy from OAuth, from, for example, Google Calendar into a digital twin, i.e. the JSON files, or the file that we grab from a Gmail into the JSON files. That's the backup that I'm talking about." (<a href="https://decisions.agents.sovereignweb.site/records/2026-11-24__twin-backup-meaning.json">record 2026-11-24__twin-backup-meaning</a>)</p>
+<p>So the backup is <strong>the twin's own files</strong>: not Google's backup products, and not a backup service.</p>
 
-<h2>Who it is for, and the pain <span class="tag fact">Fact</span></h2>
-<p>What Google gives a person today:</p>
+<h2>The capability <span class="tag prop">Proposal</span></h2>
+<ol>
+<li><strong>Copy.</strong> The person opens a page and signs in to Google from it (OAuth). The page reads their Calendar events, later their Gmail, through Google's API.</li>
+<li><strong>Into JSON files.</strong> Each event and each message becomes a plain JSON file: the digital twin. The person can open, search, diff and move those files.</li>
+<li><strong>Versioned.</strong> The files live in a Git-style history, so every change to an event is kept: "a version controlled, Git version of email" (Dinis's memo).</li>
+<li><strong>Held by the person.</strong> The files stay in the browser's own storage, then in the person's encrypted vault, "encrypted with a user's key". The OAuth token stays in the browser; nothing passes through our servers.</li>
+<li><strong>Kept fresh.</strong> While the tab is open, the page checks for changes every few minutes and backs off when nothing moves.</li>
+</ol>
+<p>The files are the product. Everything else (better search, download, filters, agents working on the copy under a policy) is built on them.</p>
+
+<h2>Why a copy you hold matters <span class="tag fact">Fact</span></h2>
+<p>What Google gives a person today, for comparison:</p>
 <div class="wrap"><table>
 <caption class="skip">Google's own backup options</caption>
 <thead><tr><th scope="col">What</th><th scope="col">What it does</th><th scope="col">Source</th></tr></thead>
@@ -124,7 +134,7 @@ th{font-weight:600}.wrap{overflow-x:auto}
 </table></div>
 <p class="crumbs">Google Help pages refuse the automated link check this site runs, so their addresses are shown as text, not links; each was read on 24 Nov 2026.</p>
 <p>So a person can export, but by hand, or at best every two months for a year; and anything deleted is gone after 30 days. There is no continuous, versioned copy that the person holds.</p>
-<p>What businesses buy instead (Google Workspace only):</p>
+<p>What businesses buy instead (Google Workspace only), each holding the copy on its own servers:</p>
 <div class="wrap"><table>
 <caption class="skip">Backup services</caption>
 <thead><tr><th scope="col">Service</th><th scope="col">Price as published</th><th scope="col">Who it serves</th></tr></thead>
@@ -152,31 +162,29 @@ th{font-weight:600}.wrap{overflow-x:auto}
 </tbody>
 </table></div>
 
-<h2>The rule that decides the order <span class="tag fact">Fact</span></h2>
+<h2>Google's rules, and what they allow first <span class="tag fact">Fact</span></h2>
 <ul class="plain">
-<li>Reading Calendar is a <strong>sensitive</strong> scope: "Examples of sensitive scopes include reading events stored in Google Calendar" (<a href="https://developers.google.com/identity/protocols/oauth2/production-readiness/sensitive-scope-verification">Google for Developers</a>). A published app needs Google's verification.</li>
-<li>Reading Gmail (gmail.readonly) is a <strong>restricted</strong> scope (<a href="https://developers.google.com/workspace/gmail/api/auth/scopes">Gmail scopes</a>). An app whose restricted data goes "from or through a third-party server" needs a security assessment under CASA, "at least every 12 months" (<a href="https://developers.google.com/identity/protocols/oauth2/production-readiness/restricted-scope-verification">restricted-scope verification</a>).</li>
+<li><strong>For Dinis's own accounts, no verification is needed.</strong> Google offers a Personal mode: "Personal mode apps do not require OAuth app verification, are not subject to the OAuth user cap or 7-day test user token expiration, and do not display the unverified app screen." It is for the Google Account that created the client. Google Cloud Help, OAuth consent and publishing status: <code>https://support.google.com/cloud/answer/15549945</code> (read 24 Nov 2026).</li>
+<li><strong>For a small demo group, Testing mode.</strong> A project "configured with a publishing status of Testing" is "limited to up to 100 test users", Google shows them a warning, and "Authorizations by a test user will expire seven days from the time of consent" (same page). The OAuth guide says the same of refresh tokens (<a href="https://developers.google.com/identity/protocols/oauth2">Google for Developers, OAuth 2.0</a>).</li>
+<li><strong>For the public, verification.</strong> An unverified app with sensitive or restricted scopes shows the unverified app screen and is "limited to 100 new users until it is verified" (Google Cloud Help, Unverified apps: <code>https://support.google.com/cloud/answer/7454865</code>). Reading Calendar is a sensitive scope (<a href="https://developers.google.com/identity/protocols/oauth2/production-readiness/sensitive-scope-verification">sensitive scopes</a>). Gmail's read scope is restricted (<a href="https://developers.google.com/workspace/gmail/api/auth/scopes">Gmail scopes</a>); restricted data going "from or through a third-party server" needs a security assessment "at least every 12 months" (<a href="https://developers.google.com/identity/protocols/oauth2/production-readiness/restricted-scope-verification">restricted-scope verification</a>).</li>
 </ul>
-<p>So Calendar first, as Dinis said, is also the cheaper door. Whether a browser-only app, with no server of ours, still needs the yearly assessment is not settled by the pages I read; it needs checking with Google's terms before Gmail is offered to the public. Dinis's earlier route, where each organisation creates its own Google app in its own domain, moves that burden to them.</p>
+<p>So the order is: build and show the copy on Dinis's own accounts (Personal mode), then a demo for up to 100 named testers (Testing mode), and only then the public, after verification. Nothing is said publicly about the public version until that step is decided.</p>
 
 <h2>How we would tell it <span class="tag prop">Proposal</span></h2>
 <ol>
-<li><strong>The line:</strong> "Your calendar, backed up in your own browser. Every change kept, encrypted with your key, and nothing on our servers."</li>
-<li><strong>The proof first:</strong> a page where a visitor presses one button, signs in to Google, and watches their own calendar arrive as a twin, with a history they can scroll back through. No sign-up, nothing sent to us.</li>
-<li><strong>The honest lines beside it:</strong> what Google already gives (export, Takeout every two months, 30-day trash); that it runs while the tab is open; that Gmail comes later, after Google's verification.</li>
-<li><strong>Who hears it first:</strong> segment A, founders and small teams, as the demo that shows the agentic workflow is real; then segment B, people, as a free tool that leads to "I want one".</li>
-<li><strong>The story for traffic:</strong> "The backup Google does not give you." A newsroom article (b.newsroom, when Dinis says go) and the hub linking to the demo.</li>
-<li><strong>The component story:</strong> the same backup as a small open component any sovereign website can add, which is how sites become useful, not just pretty.</li>
+<li><strong>The line:</strong> "Your calendar, as files you hold. Every change kept, encrypted with your key, nothing on our servers."</li>
+<li><strong>The proof first:</strong> Dinis's own calendar copied into a twin, its JSON files and history shown (with private details hidden), as the first demo of the agentic workflow.</li>
+<li><strong>The honest lines beside it:</strong> it runs while the tab is open; Google already offers export, Takeout and a 30-day trash; the public version waits for Google's verification.</li>
+<li><strong>Who hears it first:</strong> segment A, founders and small teams, as proof the workflow is real; later segment B, as a free tool that leads to "I want one".</li>
+<li><strong>For traffic:</strong> "Your data as files you own." A newsroom article (b.newsroom, when Dinis says go).</li>
+<li><strong>As a component:</strong> the same copy as a small open component any sovereign website can add.</li>
 </ol>
 
-<h2>Decisions for Dinis</h2>
+<h2>Decision for Dinis</h2>
 <div class="decide">
-<p><strong>1. Whose Google app?</strong> Ours (we carry Google's verification, and for Gmail the yearly assessment), or each owner's own (they carry it, the fork-it-yourself route).</p>
-<p>My recommendation: <strong>ours for Calendar</strong> (sensitive scope, one verification, the public demo needs it); <strong>each owner's own for Gmail</strong> until we know whether the yearly assessment applies to a browser-only app.</p>
-</div>
-<div class="decide">
-<p><strong>2. Free or paid?</strong> The demo drives traffic only if it is free and needs no sign-up.</p>
-<p>My recommendation: <strong>free</strong>, and the vault copy is what leads to the paid offer later. No price is set here.</p>
+<p><strong>Whose OAuth client does the copy?</strong> (<a href="/decisions/requests/2026-11-24__twin-copy-oauth-client.json">request 2026-11-24__twin-copy-oauth-client</a>; the earlier request 2026-11-24__twin-backup-google-app is withdrawn.)</p>
+<ul><li>a) Dinis's own client in Personal mode, for his own accounts first: no verification, no user cap, no 7-day expiry</li><li>b) one SovereignWebsite client in Testing mode, for up to 100 named testers, re-consenting every 7 days</li><li>c) each owner's own client (the fork-it-yourself route)</li></ul>
+<p>My recommendation: <strong>a) now</strong>, to build and show the copy; <strong>b) next</strong>, for the demo with segment A; verification only when a public version is decided.</p>
 </div>
 
 <footer>
