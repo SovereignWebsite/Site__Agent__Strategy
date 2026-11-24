@@ -1,0 +1,40 @@
+{
+ "v": 1,
+ "id": "2026-11-24__frameworks-word-and-wardley-site-name",
+ "agent": "strategy.d@AgentiCCells.dinis",
+ "account": "D",
+ "asked_at": "2026-11-24T01:10:21Z",
+ "session": "https://claude.ai/code/session_015gaHddd1qVEaY3EG6feEsL",
+ "title": "The umbrella word for Wardley, Cynefin, Holacracy and the rest, and the Wardley Maps site's name",
+ "change": {
+  "repository": "none (brand)",
+  "branch": "",
+  "paths": [],
+  "commits": [],
+  "patch_ids": []
+ },
+ "why": "cartographer.d's brief and my strategy need a word and a name before the site's pages are written; brand is Dinis's.",
+ "checks": [
+  "cartographer.d's brief: PrompTugal__News__Website board/team/cartographer.d/briefs/2026-11-22-wardley-maps-site.md",
+  "my strategy agrees with its recommendation"
+ ],
+ "kind": "choice",
+ "flags": {
+  "main": false,
+  "money": false,
+  "legal": false,
+  "one_way_door": false,
+  "private_person": false,
+  "unfixed_vulnerability": false
+ },
+ "options": [
+  "a) 'frameworks', with 'ways of thinking' as the plain line; site name 'Wardley Maps'",
+  "b) 'ways of thinking' as the umbrella word; site name 'Wardley Maps'",
+  "c) 'methods' or 'models' (each fits some frameworks badly)"
+ ],
+ "recommendation": "a)",
+ "needed_by": "2026-11-30T18:00:00Z",
+ "links": [
+  "https://github.com/PrompTugal/PrompTugal__News__Website/blob/dev/board/team/strategy.d/strategy/2026-11-22-wardley-maps-site.md"
+ ]
+}

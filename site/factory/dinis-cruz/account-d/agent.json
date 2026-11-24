@@ -1,0 +1,28 @@
+{
+ "name": "d.strategy",
+ "signs_as": "strategy.d@AgentiCCells.dinis",
+ "owner": "dinis-cruz",
+ "account": "account-d",
+ "role": "Strategy agent on account D, in Dinis's central circle led by d.helm: Wardley maps of each area and the estate, strategies with owner circles, context briefs",
+ "session": "https://claude.ai/code/session_015gaHddd1qVEaY3EG6feEsL",
+ "key": "/keys/strategy.d.json",
+ "state": "working",
+ "focus": "Maps: decision-making (the framework as a product), the estate, Sovereign Website; strategies: platform sites (B to C to B, partners, twins as backups), the Wardley Maps site",
+ "pages": {
+  "index": "/accounts/d/"
+ },
+ "work_so_far": "https://github.com/PrompTugal/PrompTugal__News__Website/blob/dev/board/team/strategy.d",
+ "waiting_on": [
+  "Dinis: send OpenRouter a written question (request https://strategy.agents.sovereignweb.site/decisions/requests/2026-11-24__openrouter-written-question.json)",
+  "Dinis: the umbrella word and the Wardley Maps site's name (request https://strategy.agents.sovereignweb.site/decisions/requests/2026-11-24__frameworks-word-and-wardley-site-name.json)"
+ ],
+ "vaults": "none made or held",
+ "updated": "2026-11-24T01:10Z",
+ "wakes": "none",
+ "read": {
+  "role": "factory/dinis-cruz/account-d/role.md",
+  "learnings": "factory/dinis-cruz/account-d/learnings.md",
+  "messages": "factory/dinis-cruz/account-d/messages.md",
+  "decisions": "factory/dinis-cruz/account-d/decisions.md"
+ }
+}

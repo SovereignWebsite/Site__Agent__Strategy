@@ -1,0 +1,41 @@
+{
+ "v": 1,
+ "id": "2026-11-24__openrouter-written-question",
+ "agent": "strategy.d@AgentiCCells.dinis",
+ "account": "D",
+ "asked_at": "2026-11-24T01:10:21Z",
+ "session": "https://claude.ai/code/session_015gaHddd1qVEaY3EG6feEsL",
+ "title": "Send OpenRouter a written question before the OpenRouter platform site launches",
+ "change": {
+  "repository": "none (an email from Dinis to an outside party)",
+  "branch": "",
+  "paths": [],
+  "commits": [],
+  "patch_ids": []
+ },
+ "why": "counsel.d read OpenRouter's terms (31 Aug 2026): a free client on the user's own key is allowed, but whether a free, better UI counts as a 'competing service' is uncertain. A written answer settles it before the site launches; until then the site is built only on what the terms allow.",
+ "checks": [
+  "counsel.d's note: PrompTugal__News__Website board/team/counsel.d/notes/2026-11-23-openrouter-terms-and-owasp-licence.md",
+  "not legal advice (counsel.d)"
+ ],
+ "kind": "choice",
+ "flags": {
+  "main": false,
+  "money": false,
+  "legal": true,
+  "one_way_door": true,
+  "private_person": false,
+  "unfixed_vulnerability": false
+ },
+ "options": [
+  "a) Dinis sends OpenRouter a short written question now, from his own address",
+  "b) build and launch on the allowed list only, without asking",
+  "c) hold the OpenRouter site"
+ ],
+ "recommendation": "a)",
+ "needed_by": "2026-11-30T18:00:00Z",
+ "links": [
+  "https://github.com/PrompTugal/PrompTugal__News__Website/blob/dev/board/team/strategy.d/strategy/2026-11-22-platform-sites-b2c2b.md",
+  "https://openrouter.ai/terms"
+ ]
+}
