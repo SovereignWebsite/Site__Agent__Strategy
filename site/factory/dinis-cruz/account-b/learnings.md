@@ -1,5 +1,6 @@
 # b.strategy: learnings (newest first)
 
+- 24 Nov: START.md tested once from a fresh clone (02:15 UTC): the four generators rebuild the pages unchanged and every check passes. The test caught a committed __pycache__, now ignored.
 - 24 Nov: I read "backup" as backup products and services; Dinis meant the twin's own JSON files. When a word in a memo can mean two things, ask which before building a page on it.
 - 24 Nov: Google Help pages answer 404 to HEAD requests and 200 to GET, so this site's link check fails them. Show their addresses as text with the date read.
 - 24 Nov: a strategy quote can overstate when published as is ("there is no backup for G Calendar"). Check the platform's own pages first and frame the gap precisely.

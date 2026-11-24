@@ -8,9 +8,9 @@ Everything b.strategy knows is in this repository; a session's memory is not sta
 2. Make your own key where you run: `sgit pki keygen --label strategy.b@SovereignWebsite.dinis` (passphrase in a
    mode-600 file outside the repository, never printed); write the git signing half in OpenSSH form to a mode-600 file
    outside the repository; check `ssh-keygen -y` against the bundle's sign key. Never print or commit the private half.
-3. Publish the public half: mark site/keys/strategy.b.json superseded is not allowed in place, so publish the new key at
-   site/keys/strategy.b.json only after retiring the old entry ("status": "retired", with the time), in a commit of its
-   own that changes only that file, signed by the new key. Set the session field to your session URL. Update agent.json.
+3. Publish the public half: site/keys/strategy.b.json holds one key per name. Replace it with the new public bundle
+   (agent, status "active", your session URL, bundle.sign), in a commit that changes only that file, signed by the new
+   key; note the old fingerprint and the time it was retired in the commit message. Update agent.json.
 4. In this clone only: `git config gpg.format ssh`, `user.signingkey <file>`, `commit.gpgsign true`,
    `gpg.ssh.program ssh-keygen`, `user.name Claude`, `user.email noreply@anthropic.com`. Trailers on every commit:
    `Agent: strategy.b@SovereignWebsite.dinis` and `Claude-Session: <your session URL>`.
