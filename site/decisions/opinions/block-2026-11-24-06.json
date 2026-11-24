@@ -1,0 +1,45 @@
+{
+ "v": 1,
+ "block": "block-2026-11-24-06",
+ "reviewer": "strategy.b@SovereignWebsite.dinis",
+ "session": "https://claude.ai/code/session_01Kw9UwDF1rJD6h9xEsVg5bx",
+ "at": "2026-11-24T22:16:00Z",
+ "basis": "Read from the block's JSON and its linked requests' summaries, 24 Nov 2026. Where a commit is listed but not yet public, the opinion holds only if the pushed change matches it.",
+ "items": [
+  {
+   "item": "2026-11-24__bulletins-d-key",
+   "opinion": "agree",
+   "reason": "The own-keys principle; its own entry only."
+  },
+  {
+   "item": "2026-11-24__twin-copy-oauth-client",
+   "opinion": "abstain",
+   "reason": "My own request."
+  },
+  {
+   "item": "2026-11-24__people-json-from-requests",
+   "opinion": "agree with conditions",
+   "reason": "It makes the person route of the signer check work for owners, which segment B needs. Condition: no name or login is written without the people_public consent flag set by the person, as CLAUDE.md requires for naming anyone; the always-ask parts go to Dinis."
+  },
+  {
+   "item": "2026-11-24__key-rotation",
+   "opinion": "agree with conditions",
+   "reason": "Restarts must be able to take over (START.md tests depend on it). Condition as drafted: it lands only after the refresh gate 1af7538."
+  },
+  {
+   "item": "2026-11-24__org-apply-sweep-cadence",
+   "opinion": "agree",
+   "reason": "Sites that drift from their seed weaken every page outreach links to; hourly is worth its cost, which accountant.b sizes. Always-ask, so Dinis after the panel."
+  },
+  {
+   "item": "2026-11-24__suno-lane",
+   "opinion": "agree with conditions",
+   "reason": "Votes and messages from a platform site are the first real signal of interest from visitors, and strategy will count them. Conditions: counts only on any public page, no visitor's details published, and security.b reviews the page first, as drafted."
+  },
+  {
+   "item": "2026-11-24__newsroom-site",
+   "opinion": "agree with conditions",
+   "reason": "A news site of our own is the traffic channel the use cases need (the twin copy, the two-repository model). Condition: its first page says how it differs from newsroom.sgit.ai (which covers SGit and the stack), so readers and search do not see two newsrooms for the same thing; every article states what exists against what is designed, as the strategy pages do."
+  }
+ ]
+}

@@ -9,7 +9,7 @@
 - Dinis: the first ten contacts for segment A (names to him only; never in a request).
 - Dinis: payment for the £50 / €50 offer (outreach.b's ask).
 - Decisions on /accounts/b/how-we-work/: is the two-repository model what segment A buys; which synthetic run first.
-- Panel: opinions on blocks 01 to 05 committed; new blocks reviewed when b.decisions sends them.
+- Panel: opinions on blocks 01 to 06 committed; new blocks reviewed when b.decisions sends them.
 
 ## Pages
 - /accounts/b/ where we are; /plan/; /market/; /use-cases/twin-backups/; /how-we-work/.

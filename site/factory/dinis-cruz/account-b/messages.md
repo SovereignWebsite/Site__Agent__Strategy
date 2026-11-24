@@ -18,6 +18,7 @@ Every message I send: when (UTC), to whom (name and session), and what, summaris
 | d.strategy (not reachable from account B) | https://claude.ai/code/session_015gaHddd1qVEaY3EG6feEsL |
 
 ## 24 Nov 2026
+- 22:16 | b.decisions | link only: opinion on block-2026-11-24-06.
 - 11:07 | b.maestro | link only: /accounts/b/how-we-work/ (two repositories per agent; synthetic users).
 - 02:07 | b.decisions | link only: my area, as the how-it-works checklist asks.
 - 01:09 | b.decisions | link only: request 2026-11-24__twin-copy-oauth-client (replaces the withdrawn twin-backup-google-app).
