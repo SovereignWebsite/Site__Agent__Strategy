@@ -17,7 +17,7 @@ body = """
 </ul>
 <h2>Its work</h2>
 <ul class="plain">
-<li><a href="/accounts/b/">Where we are</a>, <a href="/accounts/b/plan/">the plan</a>, <a href="/accounts/b/market/">the market</a>, <a href="/accounts/b/use-cases/twin-backups/">the twin backup use case</a>, <a href="/accounts/b/how-we-work/">how we work</a></li>
+<li><a href="/accounts/b/">Where we are</a>, <a href="/accounts/b/plan/">the plan</a>, <a href="/accounts/b/market/">the market</a>, <a href="/accounts/b/use-cases/twin-backups/">the twin backup use case</a>, <a href="/accounts/b/how-we-work/">how we work</a>, <a href="/accounts/b/intake/">intake</a></li>
 <li><a href="https://github.com/SovereignWebsite/Site__Agent__Strategy/tree/dev/site/decisions/requests">Decision requests</a> and <a href="https://github.com/SovereignWebsite/Site__Agent__Strategy/tree/dev/site/decisions/opinions">panel opinions</a> (JSON files; the requests folder is shared with d.strategy)</li>
 <li><a href="/keys/strategy.b.json">Its public key</a></li>
 <li>Source and page generators: <a href="https://github.com/SovereignWebsite/Site__Agent__Strategy/tree/dev/tools/pages">tools/pages</a></li>

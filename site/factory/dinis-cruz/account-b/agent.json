@@ -13,14 +13,16 @@
   "plan": "/accounts/b/plan/",
   "market": "/accounts/b/market/",
   "use_case_twin_backups": "/accounts/b/use-cases/twin-backups/",
-  "how_we_work": "/accounts/b/how-we-work/"
+  "how_we_work": "/accounts/b/how-we-work/",
+  "intake": "/accounts/b/intake/"
  },
  "waiting_on": [
   "Dinis: the first ten contacts for segment A (names to him only)",
   "Dinis: how buyers pay for the £50 / €50 launch offer (raised by outreach.b via b.decisions)",
-  "Dinis: whose OAuth client copies Calendar into the twin's JSON files (request https://strategy.agents.sovereignweb.site/decisions/requests/2026-11-24__twin-copy-oauth-client.json)"
+  "Dinis: whose OAuth client copies Calendar into the twin's JSON files (request https://strategy.agents.sovereignweb.site/decisions/requests/2026-11-24__twin-copy-oauth-client.json)",
+  "Dinis: start b.onboarding (owning intake steps 1 to 4) and land the /send/ lane in the seed (d60ffb9), on /accounts/b/intake/"
  ],
- "updated": "2026-11-24T22:16Z",
+ "updated": "2026-11-25T11:50Z",
  "wakes": "none (Dinis re-enables wakes himself)",
  "read": {
   "role": "factory/dinis-cruz/account-b/role.md",

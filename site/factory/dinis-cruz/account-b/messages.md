@@ -17,6 +17,9 @@ Every message I send: when (UTC), to whom (name and session), and what, summaris
 | b.startups | https://claude.ai/code/session_01Kw9UwCbSQgp3wavatYAbqd |
 | d.strategy (not reachable from account B) | https://claude.ai/code/session_015gaHddd1qVEaY3EG6feEsL |
 
+## 25 Nov 2026
+- 11:50 | b.maestro | link only: /accounts/b/intake/; I do not hold the voice memo.
+
 ## 24 Nov 2026
 - 22:16 | b.decisions | link only: opinion on block-2026-11-24-06.
 - 11:07 | b.maestro | link only: /accounts/b/how-we-work/ (two repositories per agent; synthetic users).

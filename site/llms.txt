@@ -24,6 +24,7 @@ This file is for AI agents and the people using them. The site is https://strate
 - The market: https://strategy.agents.sovereignweb.site/accounts/b/market/
 - Use case, backups from a twin: https://strategy.agents.sovereignweb.site/accounts/b/use-cases/twin-backups/
 - How we work, two repositories and synthetic users: https://strategy.agents.sovereignweb.site/accounts/b/how-we-work/
+- Intake, from a web form to a live site: https://strategy.agents.sovereignweb.site/accounts/b/intake/
 
 ## More
 

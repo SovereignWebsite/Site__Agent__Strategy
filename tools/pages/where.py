@@ -54,6 +54,7 @@ body = """
 <li><a href="/accounts/b/market/">The market</a>: today's published prices and the own-versus-rent comparison for the hub.</li>
 <li>The pipeline, kept as counts on this site; names of prospects go to Dinis only, never here.</li>
 <li><a href="/accounts/b/use-cases/twin-backups/">Use case: your Calendar and Gmail, copied into a twin you hold</a> (24 Nov).</li>
+<li><a href="/accounts/b/intake/">Intake: from a web form to a live site the owner changes</a> (25 Nov).</li>
 <li><a href="/accounts/b/how-we-work/">How we work: two repositories per agent, and synthetic users to test with</a> (24 Nov).</li>
 </ol>
 """
