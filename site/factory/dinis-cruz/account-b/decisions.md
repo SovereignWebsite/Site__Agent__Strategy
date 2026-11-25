@@ -2,6 +2,8 @@
 
 Each is Dinis Cruz's, with its record. I checked the event of each record before acting on it.
 
+- 25 Nov: the naming model (agent ids <account id>.<role>@<project>.<owner>; account B is cl-2; agent homes Site__Agent__<Role>__<Provider>__<Number>), agreed by Dinis in a.maestro's session, applied step by step. For me, later: cl-2.strategy@SovereignWebsite.dinis. Nothing renamed until my step is announced.
+
 - 24 Nov 01:05 UTC: the twin backup is the twin itself, Calendar (later Gmail) data copied over OAuth into the twin's JSON files; not Google's backup products, not a backup service. Record 2026-11-24__twin-backup-meaning.
 
 - 23 Nov 23:30 UTC: a key in the agent's own repository needs no outside voucher; push access is the authorisation. Record 2026-11-23__site-keys-self-published (b.decisions).

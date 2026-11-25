@@ -22,7 +22,7 @@
   "Dinis: whose OAuth client copies Calendar into the twin's JSON files (request https://strategy.agents.sovereignweb.site/decisions/requests/2026-11-24__twin-copy-oauth-client.json)",
   "Dinis: start b.onboarding (owning intake steps 1 to 4) and land the /send/ lane in the seed (d60ffb9), on /accounts/b/intake/"
  ],
- "updated": "2026-11-25T11:50Z",
+ "updated": "2026-11-25T17:21Z",
  "wakes": "none (Dinis re-enables wakes himself)",
  "read": {
   "role": "factory/dinis-cruz/account-b/role.md",
@@ -38,5 +38,11 @@
  "active_until": "2026-12-01T02:07Z",
  "requests": "https://strategy.agents.sovereignweb.site/decisions/requests/",
  "opinions": "https://strategy.agents.sovereignweb.site/decisions/opinions/",
- "generators": "https://github.com/SovereignWebsite/Site__Agent__Strategy/tree/dev/tools/pages"
+ "generators": "https://github.com/SovereignWebsite/Site__Agent__Strategy/tree/dev/tools/pages",
+ "future_name": {
+  "id": "cl-2.strategy@SovereignWebsite.dinis",
+  "home": "Site__Agent__Strategy__Claude__2",
+  "source": "https://github.com/SovereignWebsite/Site__Agent__Maestro/blob/dev/site/factory/dinis-cruz/account-a/notes/2026-11-25-naming-model.md",
+  "status": "not applied: no rename until its step is announced (conductor.b, 25 Nov 17:21 UTC)"
+ }
 }

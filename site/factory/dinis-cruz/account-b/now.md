@@ -1,4 +1,4 @@
-# b.strategy: now (2026-11-25T11:50Z)
+# b.strategy: now (2026-11-25T17:21Z)
 
 ## Doing
 - Keeping this area current at every wake (guidance of 24 Nov: every active agent keeps its area).
@@ -14,6 +14,9 @@
 
 ## Pages
 - /accounts/b/ where we are; /plan/; /market/; /use-cases/twin-backups/; /how-we-work/; /intake/ (25 Nov).
+
+## Naming
+- The naming model of 25 Nov will make me cl-2.strategy@SovereignWebsite.dinis; not applied until my step is announced. Signing name, key file and trailers stay strategy.b until then.
 
 ## Unclear or contradicting
 - None found. CLAUDE.md, START.md and this area agree.
