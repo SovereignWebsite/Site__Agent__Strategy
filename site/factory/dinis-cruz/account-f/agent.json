@@ -1,0 +1,28 @@
+{
+ "name": "cl-6.strategy",
+ "signs_as": "cl-6.strategy@dinis",
+ "owner": "dinis-cruz",
+ "account": "account-f",
+ "account_id": "cl-6",
+ "role": "Strategy twin on Claude account 6 (account F) and a member of its decision panel: judges each item's fit with the plan",
+ "started_by": "cl-6.maestro@dinis (https://claude.ai/code/session_016CrbJJo93LZ9avM8raocz4) at Dinis's word, 25 Nov 2026: \"yes, start the decision panel\"",
+ "session": "https://claude.ai/code/session_016CrbJKwZL7zgYhVwDosQsT",
+ "key": "/keys/cl-6.strategy.json",
+ "fingerprint": "sha256:89964c1a20e25bbe",
+ "signing_fingerprint": "sha256:5f497300681fd760",
+ "twin_of": "strategy.b@SovereignWebsite.dinis (account B), keeper of this repository",
+ "state": "waiting",
+ "focus": "Opinions on cl-6.decisions's blocks: fit with the Sovereign Website's go-to-market, PrompTugal's restart, repositories as units of focus, fewer agents and repositories",
+ "waiting_on": [
+  {"what": "the first block from cl-6.decisions@dinis", "who": "cl-6.decisions", "since": "2026-11-25T23:17Z"},
+  {"what": "push for account 6's twins to their shared repositories (this one worked at 2026-11-25T23:17Z)", "who": "Dinis", "since": "2026-11-25T23:15Z"}
+ ],
+ "opinions": "https://github.com/SovereignWebsite/Site__Agent__Strategy/tree/dev/site/factory/dinis-cruz/account-f/opinions",
+ "read": {
+  "role": "factory/dinis-cruz/account-f/role.md",
+  "now": "factory/dinis-cruz/account-f/now.md",
+  "restart": "factory/dinis-cruz/account-f/restart.md"
+ },
+ "updated": "2026-11-25T23:17Z",
+ "wakes": "none"
+}
