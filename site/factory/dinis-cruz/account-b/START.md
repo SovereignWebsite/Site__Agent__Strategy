@@ -1,5 +1,7 @@
 # Starting a fresh b.strategy session
 
+Read restart.md first (repositories, paths, wakes, first steps); this file has the detailed commands.
+
 For a fresh session started with this repository (SovereignWebsite/Site__Agent__Strategy) and one line pointing here.
 Everything b.strategy knows is in this repository; a session's memory is not state.
 

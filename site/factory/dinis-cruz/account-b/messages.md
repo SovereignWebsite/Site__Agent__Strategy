@@ -17,6 +17,9 @@ Every message I send: when (UTC), to whom (name and session), and what, summaris
 | b.startups | https://claude.ai/code/session_01Kw9UwCbSQgp3wavatYAbqd |
 | d.strategy (not reachable from account B) | https://claude.ai/code/session_015gaHddd1qVEaY3EG6feEsL |
 
+## 26 Nov 2026
+- 16:20 | b.maestro | "ready" with the link to the handover.
+
 ## 25 Nov 2026
 - 11:50 | b.maestro | link only: /accounts/b/intake/; I do not hold the voice memo.
 

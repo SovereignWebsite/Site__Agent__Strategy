@@ -1,6 +1,7 @@
-# b.strategy: now (2026-11-25T17:21Z)
+# b.strategy: now (2026-11-26T16:20Z)
 
 ## Doing
+- Handover ready (maestro.b's check, 26 Nov): sessions/2026-11-26-a/handover.md; restart.md written in full. The session may be archived; a fresh one starts from restart.md.
 - Keeping this area current at every wake (guidance of 24 Nov: every active agent keeps its area).
 - Waiting for decisions; no work in progress that is held only in the session.
 

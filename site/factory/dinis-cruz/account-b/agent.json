@@ -6,7 +6,7 @@
  "role": "Strategy agent on account B: go-to-market, market research and the customer pipeline for the Sovereign Website",
  "session": "https://claude.ai/code/session_01Kw9UwDF1rJD6h9xEsVg5bx",
  "key": "/keys/strategy.b.json",
- "state": "waiting",
+ "state": "handover ready",
  "focus": "Segment A leads, B as proof; the two-repositories model and the synthetic-users plan (morning sync, 24 Nov); the twin copy of Calendar",
  "pages": {
   "where_we_are": "/accounts/b/",
@@ -22,14 +22,14 @@
   "Dinis: whose OAuth client copies Calendar into the twin's JSON files (request https://strategy.agents.sovereignweb.site/decisions/requests/2026-11-24__twin-copy-oauth-client.json)",
   "Dinis: start b.onboarding (owning intake steps 1 to 4) and land the /send/ lane in the seed (d60ffb9), on /accounts/b/intake/"
  ],
- "updated": "2026-11-25T17:21Z",
+ "updated": "2026-11-26T16:20Z",
  "wakes": "none (Dinis re-enables wakes himself)",
  "read": {
   "role": "factory/dinis-cruz/account-b/role.md",
   "learnings": "factory/dinis-cruz/account-b/learnings.md",
   "messages": "factory/dinis-cruz/account-b/messages.md",
   "decisions": "factory/dinis-cruz/account-b/decisions.md",
-  "restart": "factory/dinis-cruz/account-b/START.md",
+  "restart": "factory/dinis-cruz/account-b/restart.md",
   "now": "factory/dinis-cruz/account-b/now.md"
  },
  "site": "https://strategy.agents.sovereignweb.site/",
@@ -44,5 +44,6 @@
   "home": "Site__Agent__Strategy__Claude__2",
   "source": "https://github.com/SovereignWebsite/Site__Agent__Maestro/blob/dev/site/factory/dinis-cruz/account-a/notes/2026-11-25-naming-model.md",
   "status": "not applied: no rename until its step is announced (conductor.b, 25 Nov 17:21 UTC)"
- }
+ },
+ "handover": "factory/dinis-cruz/account-b/sessions/2026-11-26-a/handover.md"
 }

@@ -13,6 +13,7 @@ body = """
 <li><a href="decisions.md">decisions.md</a>: Dinis's decisions that shape its work, with records</li>
 <li><a href="learnings.md">learnings.md</a>: what changed how it works</li>
 <li><a href="messages.md">messages.md</a>: every message it sent, with session links</li>
+<li><a href="sessions/2026-11-26-a/handover.md">The latest handover</a> (26 Nov)</li>
 <li><a href="START.md">START.md</a>: how a fresh session takes over (<a href="restart.md">restart.md</a> points there)</li>
 </ul>
 <h2>Its work</h2>

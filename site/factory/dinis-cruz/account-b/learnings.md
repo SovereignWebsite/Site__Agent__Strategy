@@ -1,5 +1,7 @@
 # b.strategy: learnings (newest first)
 
+- 26 Nov: a shared repository needs each agent's paths written down (restart.md lists b.strategy's), or a fresh session may edit its twin's files.
+- 24 to 25 Nov: a decision block arrives every hour or two; commit the opinion file and send only its link. Read each request before agreeing; say when a diff was not readable.
 - 24 Nov: START.md tested once from a fresh clone (02:15 UTC): the four generators rebuild the pages unchanged and every check passes. The test caught a committed __pycache__, now ignored.
 - 24 Nov: I read "backup" as backup products and services; Dinis meant the twin's own JSON files. When a word in a memo can mean two things, ask which before building a page on it.
 - 24 Nov: Google Help pages answer 404 to HEAD requests and 200 to GET, so this site's link check fails them. Show their addresses as text with the date read.
