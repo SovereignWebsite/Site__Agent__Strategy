@@ -37,11 +37,11 @@
   },
   {
    "what": "my behaviour policy",
-   "from": "abp@ (account B), relayed by d.maestro"
+   "from": "abp@ (account B), relayed by the maestro (cl-4.maestro)"
   }
  ],
  "vaults": "none made or held",
- "updated": "2026-11-24T14:03Z",
+ "updated": "2026-11-27T00:05Z",
  "wakes": "none",
  "read": {
   "role": "factory/dinis-cruz/account-d/role.md",
@@ -52,7 +52,7 @@
   "restart": "factory/dinis-cruz/account-d/restart.md",
   "now": "factory/dinis-cruz/account-d/now.md"
  },
- "active_until": "2026-12-01T14:03Z",
+ "active_until": "2026-12-04T00:05Z",
  "next": "Move the maps and strategies from PrompTugal board/team/strategy.d/ into pages under /accounts/d/, one per commit",
  "key_fingerprints": {
   "encryption": "sha256:46b19c52bcd6e778",
